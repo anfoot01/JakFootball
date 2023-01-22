@@ -1,0 +1,184 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+section{
+    position: absolute;/*абсолютное позиционирование*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;/*растянуть на весь экран сохраняя пропорции*/
+    background-position-x: center;/*позиция картинки по горизонтали в центре*/
+    animation: animateBg 50s linear infinite;/*свойства анимации*/
+    
+}    
+span{
+    position: absolute;
+    width: 12px;/*ширина звезды*/
+    height: 12px;/*высота звезды*/
+    background: #fff;/*цвет звезды*/
+    border-radius: 50%;/*закоугление углов*/
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+        0 0 0 8px rgba(255,255,255,.1),
+        0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}    
+span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}    
+@keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-1000px);
+        opacity: 0;
+    }
+}    
+span:nth-child(1){
+    top: 0px;
+    right: 0px;
+    animation-delay: 0;
+    animation-duration: 1s;
+    z-index:2;
+}
+span:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    
+}
+span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+    z-index:2;
+}
+span:nth-child(4){
+    top: 0px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+    z-index:2;
+}
+span:nth-child(6){
+    top: 0px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+    z-index:2;
+}
+span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+span:nth-child(9){
+    top: 0px;
+    right: 1000px;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+    z-index:2;
+}
+span:nth-child(10){
+    top: 0px;
+    right: 450px;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+    z-index:2;
+}    
+.wave_inner {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.wave {
+    margin: 20px;
+    animation: wave ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+}
+.wave:hover {
+    animation-play-state: paused;
+}
+.wave img {
+    border: 5px solid #BFE2FF;
+    display: block;
+    width: 325px;
+    height: 400px;
+    object-fit: cover; 
+}
+.wave figcaption {
+    text-align: center;
+    background: #BFE2FF;
+    padding: 5px 5px 10px 5px;
+    font-family: Verdana, sans-serif; 
+}
+.wave:after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #337AB7;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+.wave:before {
+    content: '';
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    display: block;
+    width: 1px;
+    height: 1px;
+    
+} 
+@keyframes wave {
+    0% {
+        transform: rotate(4deg);
+        box-shadow: 6px 8px 22px rgba(0,0,0,0.3), 12px 16px 24px rgba(0,0,0,0.2);
+    }
+    100% {
+        transform: rotate(-4deg);
+        box-shadow: -6px 8px 22px rgba(0,0,0,0.3), -12px 16px 24px rgba(0,0,0,0.2);
+    }
+}

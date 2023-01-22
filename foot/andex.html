@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FootBall</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="GoalKeeper.css" />
+    <link rel="stylesheet" href="DefRight.css" />
+    <link rel="stylesheet" href="DefLeft.css" />
+    <link rel="stylesheet" href="DefCenterLeft.css" />
+    <link rel="stylesheet" href="DefCenterRight.css" />
+    <link rel="stylesheet" href="RightAtDef.css">
+    <link rel="stylesheet" href="LeftAtDef.css">
+    <link rel="stylesheet" href="AtDef.css">
+    <link rel="stylesheet" href="rightAttaker.css">
+    <link rel="stylesheet" href="leftAttaker.css">
+    <link rel="stylesheet" href="Attaker.css">
+  </head>
+  <body>
+    
+    <div class="attaker">
+      НАП
+      <div class="dropdownRonaldo">
+        <button onclick="RonaldoFunction()" class="dropbtnRonaldo">
+          +
+        </button>
+        <div id="myDropdownRonaldo" class="dropdown-contentRonaldo">
+          <button onclick="Ronaldo()" class="Ronaldo"> Ronaldo</button>
+          <button onclick="Coutihno()" class="Coutihno">Kane</button>
+          <button onclick="Hazard()" class="Hazard">Hazard</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="leftAttaker">
+      ЛВ
+      <div class="dropdownMessi">
+        <button onclick="MessiFunction()" class="dropbtnMessi">
+          +
+        </button>
+        <div id="myDropdownMessi" class="dropdown-contentMessi">
+          <button onclick="Messi()" class="Messi"> Messi</button>
+          <button onclick="Coutihno()" class="Coutihno">Coutihno</button>
+          <button onclick="Hazard()" class="Hazard">Hazard</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="rightAttaker">
+      ПВ
+      <div class="dropdownMbappe">
+        <button onclick="MbappeFunction()" class="dropbtnMbappe">
+          +
+        </button>
+        <div id="myDropdownMbappe" class="dropdown-contentMbappe">
+          <button onclick="Mbappe()" class="Mbappe"> Mbappe</button>
+          <button onclick="Salah()" class="Salah">Salah</button>
+          <button onclick="Bale()" class="Bale">Bale</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="AtDef">
+      ЦП
+      <div class="dropdownReus">
+        <button onclick="ReusFunction()" class="dropbtnReus">
+          +
+        </button>
+        <div id="myDropdownReus" class="dropdown-contentReus">
+          <button onclick="Reus()" class="Reus"> Reus</button>
+          <button onclick="DavidSilva()" class="DavidSilva">DavidSilva</button>
+          <button onclick="DeJong()" class="DeJong">DeJong</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="LeftAtDef">
+      ЦП
+      <div class="dropdownIsco">
+        <button onclick="IscoFunction()" class="dropbtnIsco">
+          +
+        </button>
+        <div id="myDropdownIsco" class="dropdown-contentIsco">
+          <button onclick="Isco()" class="Isco"> Isco</button>
+          <button onclick="Busquets()" class="Busquets">Busquets</button>
+          <button onclick="Dybala()" class="Dybala">Dybala</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="RightAtDef">
+      ЦП
+      <div class="dropdownVerrati">
+        <button onclick="VerratiFunction()" class="dropbtnVerrati">
+          +
+        </button>
+        <div id="myDropdownVerrati" class="dropdown-contentVerrati">
+          <button onclick="Verrati()" class="Verrati">Verrati</button>
+          <button onclick="Pogba()" class="Pogba">Pogba</button>
+          <button onclick="Eriksen()" class="Eriksen">Eriksen</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="DefCenterRight">
+      ЗАХ
+      <div class="dropdownWanDejk">
+        <button onclick="WanDejkFunction()" class="dropbtnWanDejk">
+          +
+        </button>
+        <div id="myDropdownWanDejk" class="dropdown-contentWanDejk">
+          <button onclick="WanDejk()" class="WanDejk">WanDejk</button>
+          <button onclick="Kilieni()" class="Kilieni">Kilieni</button>
+          <button onclick="Umtiti()" class="Umtiti">Umtiti</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="DefCenterLeft">
+      ЗАХ
+      <div class="dropdownPujol">
+        <button onclick="PujolFunction()" class="dropbtnPujol">
+          +
+        </button>
+        <div id="myDropdownPujol" class="dropdown-contentPujol">
+          <button onclick="Pique()" class="Pique">Pique</button>
+          <button onclick="Ramos()" class="Ramos">Ramos</button>
+          <button onclick="Pujol()" class="Pujol">Pujol</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="DefLeft">
+      ЛЗ
+      <div class="dropdownZinchenko">
+        <button onclick="ZinchenkoFunction()" class="dropbtnZinchenko">
+          +
+        </button>
+        <div id="myDropdownZinchenko" class="dropdown-contentZinchenko">
+          <button onclick="Marselo()" class="Marselo">Marselo</button>
+          <button onclick="Fernando()" class="Fernando">Fernando</button>
+          <button onclick="Zinchenko()" class="Zinchenko">Zinchenko</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="DefRight">
+      ПЗ
+      <div class="dropdownCarvajal">
+        <button onclick="CarvajalFunction()" class="dropbtnCarvajal">+</button>
+        <div id="myDropdownCarvajal" class="dropdown-contentCarvajal">
+          <button onclick="Carvajal()" class="Carvajal">Carvajal</button>
+          <button onclick="Dembele()" class="Dembele">Dembele</button>
+          <button onclick="Lehn()" class="Lehn">Lehn</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="Goalkeaper">
+      ВРТ
+      <div class="dropdownTerSchtegen">
+        <button onclick="TerSchtegenFunction()" class="dropbtnTerSchtegen">
+          +
+        </button>
+        <div id="myDropdownTerSchtegen" class="dropdown-contentTerSchtegen">
+          <button onclick="TerSchtegen()" class="Ter Schtegen">
+            Ter Schtegen
+          </button>
+          <button onclick="Loris()" class="Loris">Loris</button>
+          <button onclick="Oblak()" class="Oblak">Oblak</button>
+          <button onclick="Martinez()" class="Martinez">Martinez</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="characteristic">
+      <p class="rate">0</p>
+      <p class="shem">Схема 4-3-3</p>
+      <button class="addShem">Змінити схему</button>
+    </div>
+
+    <script src="dropdownAtDef.js"></script>
+    <script src="dropdownKeeper.js"></script>
+    <script src="dropdownLeftDef.js"></script>
+    <script src="dropdownRightDef.js"></script>
+    <script src="dropdownDefCenterLeft.js"></script>
+    <script src="dropdownDefCenterRight.js"></script>
+    <script src="dropdownRightAtDef.js"></script>
+    <script src="dropdownLeftAtDef.js"></script>
+    <script src="dropdownRightAttaker.js"></script>
+    <script src="dropdownLeftAttaker.js"></script>
+    <script src="dropdownRightAttaker.js"></script>
+    <script src="dropdownAttaker.js"></script>
+  </body>
+</html>

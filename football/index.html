@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="nave">
+    <img src="./img/logo.jpg" height="140px" alt="">
+    <a class="about" href="#">About</a>
+    <a class="contact" href="#">Contact</a>
+    <a class="more" href="#">More</a>
+  </div>
+
+
+
+  <div id="overlay">
+    <div class="popup">
+      <button class="close" title="Close" onclick="closeModal()"></button>
+      <p class="zag">ADD PLAYER</p>
+      <hr/>
+      <p>Name</p>
+      <textarea id="Name" maxlength="30"></textarea>
+      <p>Club</p>
+      <textarea id="Club" maxlength="30"></textarea>
+      <p>link to picture</p>
+      <textarea id="Link"></textarea>
+      <p>Default rating </p>
+      <textarea id="Default-rating" maxlength="30"></textarea>
+      <button class="add" onclick="add()">Add</button>
+    </div>
+  </div>
+
+  <button onclick="openModal()" type="button" class="open">add player</button>
+
+  <script src="createPLayers.js"></script> 
+  <script src="createStar.js"></script>
+  
+  <script src="modal.js"></script> 
+  <script src="addPlayers.js"></script> 
+   <script src="deletePlayers.js"></script>
+  <script src="style.js"></script>
+  <script src="someLongCycle.js"></script>
+
+ 
+
+</body>
+
+</html>

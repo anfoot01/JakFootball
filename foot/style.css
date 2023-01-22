@@ -1,0 +1,46 @@
+body {
+  background-image: url(./image/logo.jpg);
+}
+.characteristic {
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  background: #16374e;
+  color: aliceblue;
+  top: 300px;
+  left: 40px;
+  position: absolute;
+  border-bottom: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  border-top: 5px solid #ffffff;
+}
+.rate{
+  font-size: 40px;
+  text-align: center;
+}
+.shem{
+  font-size: 22px;
+  text-align: center;
+}
+.addShem{
+  font-size: 20px;
+  height: 30px;
+  width: 150px;  
+  background: #215274;
+  color: aliceblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

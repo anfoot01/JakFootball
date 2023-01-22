@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   	 <title>sushii&pizza</title>
+   	 <meta charset="utf-8">
+   	 <link rel="stylesheet" type="text/css" href="styles/main.css">
+   	 <link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+    </head>
+    <body>
+        <style>
+            body, html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    font-siz: 16px;
+}
+a{
+    text-decoration: none;
+   
+    font-size: larger;
+}
+.wrapper
+{
+    width: 100%;
+}
+
+.header
+{
+    background: #ccc;
+}
+
+.header__content
+{
+    padding: 5px;;
+    font-size: 20px;
+}
+
+.nav__item
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 25px;
+    margin: 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main__content
+{
+    width: 80%;
+    margin: 0 auto;
+}
+.theme-button
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+        </style>
+   	 <div class="wrapper">
+   		 <div class="theme-button" id="theme-button">
+                <img src="./img/meizu-temnaya-tema.jpg" width="70" alt="">
+            </div>
+   		 <header class="header">
+   			 <div class="header__content">
+   				 <h1>sushii&pizza</h1>
+   				 <nav class="nav">
+   					 <div class="nav__content">
+   						 <a href="#" class="nav__item nav__item_active">Home</a>
+   						 <a href="#" class="nav__item">Blog</a>
+   						 <a href="#" class="nav__item">About</a>
+   						 <a href="#" class="nav__item">Contacts</a>
+   					 </div>
+   				 </nav>
+   			 </div>
+   		 </header>
+   		 <main class="main">
+   			 <article class="main__content"><pre>
+   	    <img src="./img/rolls.jpg" width="250" height="170" alt=""><a href="">Ролли</a>
+            <img src="./img/pizza.jpg" width="250" height="170" alt=""><a href="">Пицца</a>
+            <img src="./img/sushii.jpg" width="250" height="170" alt=""><a href="">Суши</a>
+            </pre></article>
+   		 </main>
+   	 </div>
+   	 <script type="text/javascript" src="./theme.js"></script>
+    </body>
+</html>
